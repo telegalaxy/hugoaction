@@ -6,9 +6,9 @@ image: cover.png
 math: 
 license: 
 hidden: false
-comments: false
+comments: true
 draft: false
----
+--- 
 ## 博客使用的
 hugo+github action+codespace+netlify，小学六年级技术不太行，自认为挺完美的。
 ## 关于博客未来的规划
