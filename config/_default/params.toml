@@ -140,8 +140,8 @@ emitMetadata = 0
 owner = "telegalaxy"
 admin = "telegalaxy"
 repo = "hugoaction"
-clientID = "20a13b4"
-clientSecret = "f922ff2a847428ed11b293adc3ad75f79b435274"
+clientID = "0fae7f28e39d4fd112f5"
+clientSecret = "49624b182bca36a6924cf723d3c6925755123f58"
 
 [comments.cusdis]
 host = ""
