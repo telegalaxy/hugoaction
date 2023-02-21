@@ -26,3 +26,20 @@ draft: false
 
 2. 完成操作后，点击<kbd>Code</kbd> 创建新的Codespace[![Create codespace](https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png)](https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png)
 
+## 配置博客
+
+打开Codespace，打开`config/_default/`这里的文件就是博客配置。
+
+### 修改config.toml
+
+下面是各行需要修改的地方
+
+| 名称                   | 需要的操作                                                   |
+| ---------------------- | ------------------------------------------------------------ |
+| baseurl                | 修改为自己博客的网址，格式：（//:网址）                      |
+| languageCode           | 修改为网站的语言，这里写zh-cn                                |
+| paginate               | 每页显示文章数，保持原样即可                                 |
+| title                  | 网站标题，如"百度"                                           |
+| DefaultContentLanguage | 支持en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar。填写zh-cn |
+
+其他的不用管
