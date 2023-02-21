@@ -2,7 +2,7 @@
 title: "简简单单搭建一个博客"
 description: 小白向，此方式部署博客方便但无法魔改
 date: 2023-02-21T09:57:59Z
-image: 
+image: https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/20230221223507.png
 math: 
 license: 
 hidden: false
@@ -137,15 +137,15 @@ jobs:
 
 新建分支
 
-![新分支](https://s1.ax1x.com/2023/02/21/pSjlHzt.png)
+![新分支](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/pSjlHzt.png)
 
 点击 New branch
 
-![新分支](https://s1.ax1x.com/2023/02/21/pSjlTJA.png)
+![新分支](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/pSjlTJA.png)
 
 打开仓库>settings>Actions>General，按图修改
 
-![Action](https://s1.ax1x.com/2023/02/21/pSjlRsK.png)
+![Action](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/pSjlRsK.png)
 
 上传到Github
 
@@ -158,3 +158,14 @@ git commit -m "commit"
 git push origin master
 ```
 
+## 部署至Netlify
+
+先注册一个账号，然后新建站点，选择从Git仓库导入
+
+![导入](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/20230221222427.png)
+
+点击Github后等弹窗显示文字，关闭即可看到仓库，选择博客仓库，选择gh-pages
+
+![示意图](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/20230221222655.png)
+
+其他的不用管点Deploy site。到首页访问链接即可看到博客（每次更新博客不用手动重新部署，过程是自动的）
