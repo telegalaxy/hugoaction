@@ -43,3 +43,118 @@ draft: false
 | DefaultContentLanguage | 支持en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar。填写zh-cn |
 
 其他的不用管
+
+### 修改menu.toml
+
+在基础上进行修改即可
+
+### 修改params.toml
+
+- footer
+
+  since:填写博客创建日期，如2023
+
+  customText:自定义页脚文字，效果见本站页脚
+
+- dateFormat
+
+  不用改，改了可能会出错
+
+- sidebar
+
+  emoji:头像右下角的图标，填写emoji即可
+
+  subtitle:博客头像下的一段文字，不建议太长
+
+- sidebar.avatar
+
+  **local:头像是否在本地，如果在本地请填写true！**
+
+  src:头像链接
+
+其他的不用管
+
+## 部署博客
+
+修改`.github/workflows`内的deploy.yml(没有的新建)，删除内容后填写：
+
+```yaml
+name: Deploy to Github Pages
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Cache Hugo resources
+              uses: actions/cache@v2
+              env:
+                  cache-name: cache-hugo-resources
+              with:
+                  path: resources
+                  key: ${{ env.cache-name }}
+
+            - uses: actions/setup-go@v2
+              with:
+                  go-version: "^1.17.0"
+            - run: go version
+
+            - name: Cache Go Modules
+              uses: actions/cache@v2
+              with:
+                  path: |
+                      ~/.cache/go-build
+                      ~/go/pkg/mod
+                  key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+                  restore-keys: |
+                      ${{ runner.os }}-go-
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                  hugo-version: "latest"
+                  extended: true
+
+            - name: Build
+              run: hugo --minify --gc
+
+            - name: Deploy 🚀
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  branch: gh-pages
+                  folder: public
+                  clean: true
+                  single-commit: true
+```
+
+新建分支
+
+![新分支](https://s1.ax1x.com/2023/02/21/pSjlHzt.png)
+
+点击 New branch
+
+![新分支](https://s1.ax1x.com/2023/02/21/pSjlTJA.png)
+
+打开仓库>settings>Actions>General，按图修改
+
+![Action](https://s1.ax1x.com/2023/02/21/pSjlRsK.png)
+
+上传到Github
+
+输入
+
+```bash
+git init
+git add .
+git commit -m "commit"
+git push origin master
+```
+
