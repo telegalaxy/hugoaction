@@ -58,9 +58,9 @@ site = ""
 card = "summary_large_image"
 
 [defaultImage.opengraph]
-enabled = false
+enabled = true
 local = false
-src = ""
+src = "//s2.loli.net/2023/02/22/GdihCU3BzfXO7gJ.jpg"
 
 [colorScheme]
 toggle = true
