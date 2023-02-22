@@ -2,7 +2,7 @@
 title: "聊聊博客"
 description: 
 date: 2023-02-20T10:37:29Z
-image: cover.png
+image: https://s2.loli.net/2023/02/22/uF3zXsrGkSWKPhj.png
 math: 
 license: 
 hidden: false

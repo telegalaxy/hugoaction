@@ -2,7 +2,7 @@
 title: "简简单单搭建一个博客"
 description: 无法魔改但方便快捷自动化的博客
 date: 2023-02-21T09:57:59Z
-image: https://s2.loli.net/2023/02/22/EV8HOtimCGsfx6g.png
+image: https://s2.loli.net/2023/02/22/nSQyKU7x8mDtbhp.webp
 math: 
 license: 
 hidden: false
@@ -22,9 +22,9 @@ draft: false
 
 1. 访问[CaiJimmy/hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter)点击<kbd>Use this template</kbd> 按照提示完成操作
 
-![Step 1](https://s2.loli.net/2023/02/22/B3d7nTQXRkhDsfm.png)
+![Step 1](https://s2.loli.net/2023/02/22/DdqAMRI9wmFr1jo.webp)
 
-2. 完成操作后，点击<kbd>Code</kbd> 创建新的Codespace![Create codespace](https://s2.loli.net/2023/02/22/BmIt3KSjr8aox1z.png)
+2. 完成操作后，点击<kbd>Code</kbd> 创建新的Codespace![Create codespace](https://s2.loli.net/2023/02/22/swM6E7iWng3SLle.webp)
 
 ## 配置博客
 
@@ -137,15 +137,15 @@ jobs:
 
 新建分支
 
-![新分支](https://s2.loli.net/2023/02/22/1jkYdXb2Oy95vqJ.png)
+![New branch](https://s2.loli.net/2023/02/22/NfcwhK3HXbVBZva.webp)
 
 点击 New branch
 
-![新分支](https://s2.loli.net/2023/02/22/eQhwtYGvAdDqM51.png)
+![Create a branch](https://s2.loli.net/2023/02/22/ChRqUbF5rM1Dtvg.png)
 
 打开仓库>settings>Actions>General，按图修改
 
-![Action](https://s2.loli.net/2023/02/22/L6DT2f4SOdPtkgX.png)
+![Action](https://s2.loli.net/2023/02/22/alxWRBoE5hzD8NV.webp)
 
 上传到Github
 
@@ -162,10 +162,11 @@ git push origin master
 
 先注册一个账号，然后新建站点，选择从Git仓库导入
 
-![导入](https://s2.loli.net/2023/02/22/zNIfmM3wsodCFbY.png)
+![导入](https://s2.loli.net/2023/02/22/sCaOYjUDHJQfTl5.webp)
 
 点击Github后等弹窗显示文字，关闭即可看到仓库，选择博客仓库，选择gh-pages
 
-![示意图](https://s2.loli.net/2023/02/22/OqzRCIXgJ3EhLnN.png)
+![示意图](https://s2.loli.net/2023/02/22/9bZG7MLWeS8QqX6.webp)
 
 其他的不用管点Deploy site。到首页访问链接即可看到博客（每次更新博客不用手动重新部署，过程是自动的）
+
