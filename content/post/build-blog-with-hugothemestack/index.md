@@ -1,8 +1,8 @@
 ---
 title: "简简单单搭建一个博客"
-description: 小白向，此方式部署博客方便但无法魔改
+description: 无法魔改但方便快捷自动化的博客
 date: 2023-02-21T09:57:59Z
-image: https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/20230221223507.png
+image: https://s2.loli.net/2023/02/22/EV8HOtimCGsfx6g.png
 math: 
 license: 
 hidden: false
@@ -22,9 +22,9 @@ draft: false
 
 1. 访问[CaiJimmy/hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter)点击<kbd>Use this template</kbd> 按照提示完成操作
 
-[![Step 1](https://user-images.githubusercontent.com/5889006/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png)](https://user-images.githubusercontent.com/5889006/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png)
+![Step 1](https://s2.loli.net/2023/02/22/B3d7nTQXRkhDsfm.png)
 
-2. 完成操作后，点击<kbd>Code</kbd> 创建新的Codespace[![Create codespace](https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png)](https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png)
+2. 完成操作后，点击<kbd>Code</kbd> 创建新的Codespace![Create codespace](https://s2.loli.net/2023/02/22/BmIt3KSjr8aox1z.png)
 
 ## 配置博客
 
@@ -137,15 +137,15 @@ jobs:
 
 新建分支
 
-![新分支](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/pSjlHzt.png)
+![新分支](https://s2.loli.net/2023/02/22/1jkYdXb2Oy95vqJ.png)
 
 点击 New branch
 
-![新分支](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/pSjlTJA.png)
+![新分支](https://s2.loli.net/2023/02/22/eQhwtYGvAdDqM51.png)
 
 打开仓库>settings>Actions>General，按图修改
 
-![Action](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/pSjlRsK.png)
+![Action](https://s2.loli.net/2023/02/22/L6DT2f4SOdPtkgX.png)
 
 上传到Github
 
@@ -162,10 +162,10 @@ git push origin master
 
 先注册一个账号，然后新建站点，选择从Git仓库导入
 
-![导入](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/20230221222427.png)
+![导入](https://s2.loli.net/2023/02/22/zNIfmM3wsodCFbY.png)
 
 点击Github后等弹窗显示文字，关闭即可看到仓库，选择博客仓库，选择gh-pages
 
-![示意图](https://cdn.jsdelivr.net/gh/telegalaxy/hugoaction@picture/img/20230221222655.png)
+![示意图](https://s2.loli.net/2023/02/22/OqzRCIXgJ3EhLnN.png)
 
 其他的不用管点Deploy site。到首页访问链接即可看到博客（每次更新博客不用手动重新部署，过程是自动的）
